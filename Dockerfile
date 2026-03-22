@@ -14,4 +14,4 @@ RUN apt update && apt install -y ca-certificates && update-ca-certificates
 COPY --from=builder /app/target/release/telemt /usr/local/bin/telemt
 COPY config.toml /app/config.toml
 
-CMD ["telemt", "/app/config.toml"]
+CMD ["telemt", "run", "--port", "8443", "--secret", "32d7af2b443aefe2494c31a18f7ce03c", "--tls-domain", "www.cloudflare.com"]
