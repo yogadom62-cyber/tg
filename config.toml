@@ -8,11 +8,7 @@ tls = true
 port = 8443
 
 [censorship]
-tls_domain = "www.google.com"
+tls_domain = "www.amazon.com"
 
 [access.users]
 user = "32d7af2b443aefe2494c31a18f7ce03c"
-
-[performance]
-workers = 4
-max_connections = 20000
