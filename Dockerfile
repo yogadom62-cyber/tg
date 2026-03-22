@@ -14,4 +14,4 @@ RUN apt update && apt install -y ca-certificates && update-ca-certificates
 COPY --from=builder /app/target/release/telemt /usr/local/bin/telemt
 COPY config.toml /app/config.toml
 
-CMD ["telemt", "-c", "/app/config.toml"]
+CMD ["telemt", "/app/config.toml"]
