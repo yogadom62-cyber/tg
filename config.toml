@@ -1,17 +1,14 @@
+[network]
 bind = "0.0.0.0:8443"
 
-# твой секрет (32 hex)
+[proxy]
 secret = "32d7af2b443aefe2494c31a18f7ce03c"
 
-# включаем TLS маскировку
+[obfuscation]
 tls = true
 tls_domain = "www.cloudflare.com"
-
-# fallback (очень важно!)
 fallback_addr = "www.cloudflare.com:443"
 
-# производительность
+[performance]
 workers = 2
-
-# лимиты (защита от мусора)
 max_connections = 10000
