@@ -1,14 +1,14 @@
-[network]
-bind = "0.0.0.0:8443"
+[general]
+use_middle_proxy = false
 
-[proxy]
-secret = "32d7af2b443aefe2494c31a18f7ce03c"
-
-[obfuscation]
+[general.modes]
 tls = true
-tls_domain = "www.cloudflare.com"
-fallback_addr = "www.cloudflare.com:443"
 
-[performance]
-workers = 2
-max_connections = 10000
+[server]
+port = 8443
+
+[censorship]
+tls_domain = "www.cloudflare.com"
+
+[access.users]
+user = "32d7af2b443aefe2494c31a18f7ce03c"
