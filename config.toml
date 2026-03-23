@@ -2,13 +2,13 @@
 use_middle_proxy = false
 
 [general.modes]
-tls = false
+tls = true
 
 [server]
 port = 8443
 
 [censorship]
-tls_domain = "www.amazon.com"
+tls_domain = "www.microsoft.com"
 
 [access.users]
 user = "32d7af2b443aefe2494c31a18f7ce03c"
