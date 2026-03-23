@@ -2,7 +2,7 @@
 use_middle_proxy = false
 
 [general.modes]
-tls = true
+tls = false
 
 [server]
 port = 8443
