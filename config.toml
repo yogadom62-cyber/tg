@@ -8,7 +8,7 @@ tls = true
 port = 8443
 
 [censorship]
-tls_domain = "www.microsoft.com"
+tls_domain = "www.google.com"
 
 [access.users]
 user = "32d7af2b443aefe2494c31a18f7ce03c"
